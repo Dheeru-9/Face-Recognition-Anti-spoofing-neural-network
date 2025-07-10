@@ -16,10 +16,10 @@ import threading
 
 # ----------------- Get New Token ------------------
 def get_new_token():
-    login_url = "http://13.233.83.106:8080/api/authenticate"
+    login_url = "http:login _URL"
     payload = {
-        "username": "admin",
-        "password": "antforge"
+        "username": "Username",
+        "password": "Password"
     }
     headers = {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ def get_new_token():
 
 # ----------------- Update Token in YAML ------------------
 def update_token_in_yaml(token):
-    yaml_file = r"C:\Users\adapa\Desktop\Internship2-Antforge\Complete_FaceRecognition\Dheeraj.yml"
+    yaml_file = r"yml file location"
     
     try:
         if not os.path.exists(yaml_file):
@@ -201,7 +201,7 @@ if __name__ == "__main__":
     threading.Thread(target=refresh_token_every_5_minutes, daemon=True).start()
     refresh_token()########################
 
-    IMAGE_PATH = r"C:\\Users\\adapa\\Desktop\\Internship2-Antforge\\Complete_FaceRecognition\\Kaggle-Faces1\\Dataset\\Faces"
+    IMAGE_PATH = r"Image_Path"
 
     with open("Dheeraj.yml", "r") as f:
         config = yaml.safe_load(f)
