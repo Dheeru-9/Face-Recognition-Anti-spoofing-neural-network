@@ -203,7 +203,7 @@ if __name__ == "__main__":
 
     IMAGE_PATH = r"Image_Path"
 
-    with open("Dheeraj.yml", "r") as f:
+    with open(".yml_file_name", "r") as f:
         config = yaml.safe_load(f)
 
     camera_url = config["camera"]["url"]
