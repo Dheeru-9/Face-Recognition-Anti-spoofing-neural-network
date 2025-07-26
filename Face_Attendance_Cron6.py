@@ -15,7 +15,7 @@ import time
 import threading
 
 # ----------------- Load Config ------------------
-YAML_FILE_PATH = r"C:\Users\adapa\Desktop\Internship2-Antforge\Complete_FaceRecognition\Dheeraj.yml"
+YAML_FILE_PATH = r".yml_Location"
 with open(YAML_FILE_PATH, "r") as f:
     config = yaml.safe_load(f)
 
@@ -207,7 +207,7 @@ if __name__ == "__main__":
     threading.Thread(target=refresh_token_every_5_minutes, daemon=True).start()
     refresh_token()
 
-    IMAGE_PATH = r"C:\\Users\\adapa\\Desktop\\Internship2-Antforge\\Complete_FaceRecognition\\Kaggle-Faces1\\Dataset\\Faces"
+    IMAGE_PATH = r"Image_Path"
 
     cred = credentials.Certificate("serviceAccountKey.json")
     firebase_admin.initialize_app(cred)
