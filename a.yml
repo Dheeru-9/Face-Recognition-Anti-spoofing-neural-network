@@ -1,0 +1,11 @@
+
+camera:
+  url: "http://"  # Your IP webcam stream URL
+
+java_api:
+  url: "http://"  # Endpoint to mark attendance Login url
+  auth_url: "http://"  # Endpoint to get auth token authenticate url
+  username: "username"     # insert Username for Java API login
+  password: "password"  # insert Password for Java API login
+  token: "Token" # This will be auto-updated by the Python script
+
